@@ -1,0 +1,256 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+    outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+    text-decoration: none;
+}
+del {
+    text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.top-bar{
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+}
+
+.top-bar .nav{
+  color: white;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+          justify-content: center;
+          margin-top: 30px;
+
+}
+
+.top-bar .nav li{
+  margin-right: 30px;
+  margin-left: 30px;
+
+}
+
+.top-bar .nav li a{
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: Playfair Display,san serif ;
+  transition: color .4s ease-in-out;
+}
+
+.top-bar .nav li a:visited{
+  color: white;
+}
+
+.top-bar .nav li a:hover{
+  color: gray;
+}
+
+.title{
+  text-align: center;
+  font-size: 50px;
+  font-family: Playfair Display,san serif;
+  margin-bottom: 20px;
+}
+
+.ham{
+  width: 30px;
+  height: 25px;
+  margin: 12px 0 12px 20px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+
+  cursor: pointer;
+}
+
+.ham span{
+  display: block;
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background: white;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+.ham span:nth-child(1) {
+  top: 0px;
+}
+
+.ham span:nth-child(2) {
+  top: 12px;
+}
+
+.ham span:nth-child(3) {
+  top: 24px;
+}
+
+.ham.open span:nth-child(1) {
+  top: 12px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+.ham.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.ham.open span:nth-child(3) {
+  top: 12px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+.navbar{
+  background: url('../S__851976.jpg');
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-size: cover;
+ height: 100%;
+ text-align: center;
+}
+
+.navbar .c_button{
+  margin-top:500px;
+  margin-bottom: 200px; 
+  background: none;
+  border: 0;
+  padding-right: 10px;
+  padding-left: 10px;
+  transition: all .5s;
+}
+
+.navbar .c_button a{
+  font-family: Playfair Display,san serif ;
+  font-size: 40px;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar .c_button:hover{
+  background: rgba(255,255,255,0.1);
+}
+
+.content{
+  font-family: Playfair Display,san serif ;
+  margin-left: 100px;
+  margin-top: 100px;
+}
+
+.content .about-title{
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
+.content .about-sub-title{
+  display: flex;
+  font-size: 30px;
+  margin-top: 40px;
+  margin-bottom: 5px;
+}
+
+
+footer{
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.divider{
+  height: 3px;
+  background: #D9F2B4;
+  width: 40px;
+  margin-bottom: 10px;
+}
+
+.divider-long{
+  height: 19px;
+  background: black;
+  width: 3px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+a[ id= "about" ]:target ~ #about {
+    -webkit-transform: translateY( 0px);
+    transform: translateY( 0px );
+}
+.porfolioFigure{
+  margin-bottom: 37px;
+}
+
+.porfolioFigure .description{
+  padding-top: 60px;
+  padding-left: 20px;
+  text-align: left;
+  font-family: Playfair Display,Microsoft JhengHei,san serif;
+}
+
+.porfolioFigure .description h1{
+  color: #402039;
+}
+
+.porfolioFigure  img{
+  box-shadow: 3px 3px 5px #776677;
+  padding: 0;
+}
