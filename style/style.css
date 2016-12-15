@@ -208,6 +208,17 @@ table {
   margin-bottom: 5px;
 }
 
+.portfolio{
+  background: #9799A0;
+  text-align: center;
+}
+
+.about-desc{
+  margin-bottom: 100px;
+  padding-top: 80px;
+  padding-right: 350px;
+}
+
 
 footer{
   text-align: center;
@@ -253,4 +264,67 @@ a[ id= "about" ]:target ~ #about {
 .porfolioFigure  img{
   box-shadow: 3px 3px 5px #776677;
   padding: 0;
+}
+
+@media screen and (max-width: 700px){
+  .navbar{
+     background-size:contain;
+     background-attachment: fixed;
+  }
+  .content{
+    margin-left: 10px;
+  }
+
+  .about-desc{
+    padding-right: 10px;
+    font-size: 20px;
+  }
+
+  .title{
+    padding-top: 20px;
+  }
+
+  .col-sm-12{
+    padding: 0;
+  }
+
+  .col-md-12{
+    padding: 0;
+  }
+
+  .col-md-8{
+    padding: 0;
+  }
+
+  .porfolioFigure{
+    padding: 0;
+  }
+
+  .porfolioFigure img{
+    width: 370px;
+    height: 100%;
+  }
+
+  h1{
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+
+  h3{
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .divider{
+    background: black;
+    margin-left: 5px;
+    margin-right: 25px;
+    width: 100%;
+    height: 1px;
+  }
+
+  .bottom{
+    margin-bottom: 0;
+    padding-bottom: 30px;
+  }
 }
