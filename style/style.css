@@ -48,6 +48,9 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+  h1{
+    font-size: 40px;
+  }
 .top-bar{
   position: absolute;
   z-index: 100;
@@ -90,7 +93,8 @@ table {
   text-align: center;
   font-size: 50px;
   font-family: Playfair Display,san serif;
-  margin-bottom: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .ham{
@@ -213,10 +217,17 @@ table {
   text-align: center;
 }
 
+.portfolio .inside{
+  background-color: white;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
 .about-desc{
   margin-bottom: 100px;
   padding-top: 80px;
   padding-right: 350px;
+  font-family: Playfair Display,Microsoft JhengHei,san serif;
 }
 
 
@@ -248,6 +259,12 @@ a[ id= "about" ]:target ~ #about {
 }
 .porfolioFigure{
   margin-bottom: 37px;
+  border-bottom: 1px solid #dcdcd9
+}
+
+.porfolioFigure img{
+  height: 80%;
+  width: 80%;
 }
 
 .porfolioFigure .description{
@@ -258,12 +275,35 @@ a[ id= "about" ]:target ~ #about {
 }
 
 .porfolioFigure .description h1{
+  text-align: center;
+  margin-bottom: 20px;
   color: #402039;
+}
+
+.porfolioFigure .description p{
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.porfolioFigure .description .intro{
+  font-style: italic;
+  border-left: 4px solid #A69F98;
+  padding-left: 10px;
+  padding-right: 100px;
+  line-height: 1.33 em;
+}
+
+.porfolioFigure .description .use-lang{
+  margin-bottom: 30px;
 }
 
 .porfolioFigure  img{
   box-shadow: 3px 3px 5px #776677;
   padding: 0;
+}
+
+.final-port{
+  border-bottom: 0;
 }
 
 @media screen and (max-width: 700px){
@@ -313,14 +353,6 @@ a[ id= "about" ]:target ~ #about {
   h3{
     font-size: 30px;
     margin-bottom: 10px;
-  }
-
-  .divider{
-    background: black;
-    margin-left: 5px;
-    margin-right: 25px;
-    width: 100%;
-    height: 1px;
   }
 
   .bottom{
