@@ -378,6 +378,7 @@ a[ id="about"]:target~#about {
     background-attachment: fixed;
   }
   .content {
+    background: white;
     margin-left: 10px;
   }
   .about-desc {
@@ -436,11 +437,14 @@ a[ id="about"]:target~#about {
 }
 
 #skill .container {
+  width: 100vw;
   padding: 80px 0;
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
-  background: black;
+  background-color: rgba(56, 56, 56, 0.89);
+  background-image: repeating-linear-gradient(to top right, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 20.6%, rgb(142, 142, 142) 78.8%, rgba(0, 0, 0, 0) 100%);
+  background-image: -ms-repeating-linear-gradient(bottom left, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 20.6%, rgb(142, 142, 142) 78.8%, rgba(0, 0, 0, 0) 100%);
 }
 
 #skill .container .node {
@@ -469,8 +473,8 @@ a[ id="about"]:target~#about {
 }
 
 #skill .container .node .context .dash {
-  width: 1.1em;
+  width: 1em;
   height: 2px;
-  border-bottom: 4px solid #485880;
+  border-bottom: 4px solid #E2E935;
   margin-right: 5px;
 }
