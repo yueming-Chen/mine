@@ -24,3 +24,5 @@ before_script:
 - npm install -g express 
 
 script: node bundle.js
+
+only: gh-pages
