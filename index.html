@@ -2,11 +2,13 @@
 <html>
 
 <head>
-	<link rel="stylesheet" type="text/css" href="./style/style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
 	 crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="./style/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
 	<title>Rach</title>
 </head>
 
@@ -16,7 +18,7 @@
 			<ul class="nav">
 				<li><a href="#home">HOME</a></li>
 				<li><a href="#about">ABOUT</a></li>
-				<li><a href="#about">SKILLS</a></li>
+				<li><a href="#skill">SKILLS</a></li>
 				<li><a href="#portfolio">PORTFOLIO</a></li>
 			</ul>
 		</header>
@@ -26,126 +28,241 @@
 
 	</div>
 	<section class="content" id="about">
-		<div class="col-md-6" style="text-align: right;padding-right: 50px;">
+		<div class="col-sm-12 col-md-6" style="text-align: right;padding-right: 50px;">
 			<h1>Rach Chen</h1>
 			<h3>Full Stack E.</h3>
 		</div>
-		<div class="col-md-6" style="margin-bottom: 100px;padding-top: 80px;padding-right: 350px;">
-			<p>置身於前後端的技術，每天都在看ES7耍潮潮，不過每天主要還是在玩音樂開心的哩:D</p>
+		<div class="col-sm-12 col-md-6 about-desc">
+			<p>葬身在前後端的浪潮中，無盡地拍打，我們無法左右自己生命的長度，但往前划，絕對是生命中需要去努力的需要，將血淚譜成夢想，我們就如同當時的萊特兄弟，有錢有勢只為了錢財所驅使去製造飛行機器的人不一樣，我們血肉之軀，是為了去滋潤每個要成長的種子，我們不奢求他茁壯，但看著自己的理想慢慢的發芽，成長，我想生命的意義，就是這個了。
+			</p>
 		</div>
 	</section>
-	<section class="col-md-12" style="background: #9799A0;" id="portfolio">
-		<div class="col-md-12" style="text-align: center;">
-			<div class="col-md-12">
-				<h1 class="title">PORTFOLIO</h1>
+
+	<section id="skill">
+		<div class="container">
+
+			<div class="node">
+				<h2 class="title">HTML</h2>
+				<div class="context">
+					<div class="dash"></div>
+					pug(jade)
+				</div>
+				<div class="context">
+					<div class="dash"></div>
+					ejs
+				</div>
 			</div>
+
+			<div class="node">
+				<h2 class="title">CSS</h2>
+				<div class="context">
+					<div class="dash"></div>
+					scss
+				</div>
+				<div class="context">
+					<div class="dash"></div>
+					sass
+				</div>
+				<div class="context">
+					<div class="dash"></div>
+					less
+				</div>
+			</div>
+
+			<div class="node">
+				<h2 class="title">JAVASCRIPT</h2>
+				<div class="context">
+					<div class="dash"></div>
+					jquery
+				</div>
+				<div class="context">
+					<div class="dash"></div>
+					ES5/6/7
+				</div>
+				<div class="context">
+					<div class="dash"></div>
+					typescript
+				</div>
+			</div>
+
+			<div class="node">
+				<h2 class="title">FRAMEWORK</h2>
+				<div class="context">
+					<div class="dash"></div>
+					angular2
+				</div>
+				<div class="context">
+					<div class="dash"></div>
+					angular1.5x
+				</div>
+			</div>
+
+			<div class="node">
+				<h2 class="title">前端整合工具front end tool </h2>
+				<div class="context">
+					<div class="dash"></div>
+					gulp
+				</div>
+				<div class="context">
+					<div class="dash"></div>
+					webpack2
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="skill">
+		<h1 class="title">PORTFOLIO</h1>
+	</div>
+	<section class="col-md-12 col-sm-12 portfolio" id="portfolio">
+		<div class="col-md-10 inside col-md-offset-1">
 			<!-- 展示archieve -->
-			<div class="col-md-12 porfolioFigure">
-				<figure class="col-md-8">
+			<div class="col-md-12 col-sm-12 porfolioFigure">
+				<div class="description">
+					<h1>RECIPE Managment system</h1>
+				</div>
+				<figure>
 					<a href="https://recipevoicebe.herokuapp.com/login" target="_blank">
-					<img class="col-md-12" src="./SHOW2.png">
+					<img src="./SHOW2.png">
 				</a>
 				</figure>
-				<div class="col-md-4 description">
-					<h1>食譜管理系統</h1>
-					<span>此系統與手機的食譜APP作連接，提供後台一個視覺化頁面，此使用了Node.js與MongoDB。</span>
+				<div class="col-md-10 description col-md-offset-2">
+					<p class="intro">此系統與手機的食譜APP作連接，提供後台一個視覺化頁面。</p>
+					<p class="use-lang">use Node.js,MongoDB</p>
 				</div>
 			</div>
-			<div class="col-md-12 porfolioFigure">
-				<div class="col-md-4 description">
+
+			<div class="col-md-12 col-sm-12 porfolioFigure">
+				<div class="description">
 					<h1>Deadline Guard</h1>
-					<span>提升了行事曆只能看到日期，卻無法讓日期迫近視覺化而實作，此使用了angularJS與MongoDB。</span>
 				</div>
-				<figure class="col-md-8">
-					<a href="https://infinite-brook-57144.herokuapp.com/" target="_blank">
-					<img class="col-md-12" src="./SHOW1.png">
+				<figure>
+					<a href="https://recipevoicebe.herokuapp.com/login" target="_blank">
+					<img src="./SHOW1.png">
 				</a>
 				</figure>
+				<div class="col-md-10 description col-md-offset-2">
+					<p class="intro">提升了行事曆只能看到日期，卻無法讓日期迫近視覺化而實作，並且也有確切剩餘的日期，可以讓使用者更佳掌握自己剩餘的時間。</p>
+					<p class="use-lang">use angularJS,MongoDB</p>
+				</div>
 			</div>
-			<div class="col-md-12 porfolioFigure">
-				<figure class="col-md-8">
-					<a href="https://yueming-chen.github.io/fish/" target="_blank">
-					<img class="col-md-12" src="./SHOW3.png">
-				</a>
-				</figure>
-				<div class="col-md-4 description">
+
+			<div class="col-md-12 col-sm-12 porfolioFigure">
+				<div class="description">
 					<h1>亞洲鮭魚追蹤系統</h1>
-					<span>此系統仰賴鮭魚產軟的公式，蒐集加拿大五大湖的水溫資訊，以科學的角度來預測何時會產卵，來抑制此外來種對生態的破壞，此使用了R語言與angularJS。</span>
+				</div>
+				<figure>
+					<a href="https://recipevoicebe.herokuapp.com/login" target="_blank">
+					<img src="./SHOW3.png">
+				</a>
+				</figure>
+				<div class="col-md-10 description col-md-offset-2">
+					<p class="intro">此系統仰賴鮭魚產卵的公式，依照水溫、水流速等等，蒐集加拿大五大湖的水溫資訊，以科學統計的角度來預測何時會產卵，並在高產卵期通知人員前往處理，來抑制此外來種對生態的破壞。</p>
+					<p class="use-lang">use R,angularJS</p>
 				</div>
 			</div>
-			<div class="col-md-12 porfolioFigure">
-				<div class="col-md-4 description">
+
+			<div class="col-md-12 col-sm-12 porfolioFigure">
+				<div class="description">
 					<h1>Issueing Tracking System</h1>
-					<span>為了讓專案能更容易被掌握，讓專案產生的議題能夠更清楚的使用，此使用了ReactJS與MongoDB。</span>
 				</div>
-				<figure class="col-md-8">
-					<a href="https://infinite-brook-57144.herokuapp.com/" target="_blank">
-					<img class="col-md-12" src="./SHOW4.png">
+				<figure>
+					<a href="http://140.124.183.26:8080/#" target="_blank">
+					<img src="./SHOW6.png">
 				</a>
 				</figure>
-			</div>
-
-			<div class="col-md-12 porfolioFigure">
-				<figure class="col-md-8">
-					<a href="https://yueming-chen.github.io/fish/" target="_blank">
-					<img class="col-md-12" src="./SHOW5.png">
-				</a>
-				</figure>
-				<div class="col-md-4 description">
-					<h1>商品資訊整合系統</h1>
-					<span>現今商品資訊在包裝卻不夠詳盡，我與團隊發想了一個把所有的資訊濃縮在二維條碼之中，把資訊與客服的服務都整合之中，包含的商品也不只是食品，也有3C產品，可以去追蹤自己的物品的狀況，此使用了React、NODE.JS與MYSQL。</span>
+				<div class="col-md-10 description col-md-offset-2">
+					<p class="intro">為了讓專案能更容易被掌握，讓專案產生的議題能夠更清楚的使用。</p>
+					<p class="use-lang">use ReactJS,MongoDB</p>
 				</div>
 			</div>
 
-			<div class="col-md-12 porfolioFigure">
-
-				<div class="col-md-4 description">
-					<h1>德信投顧Line@綁定</h1>
-					<span>藉由智能機器人，讓客戶能用更生活化的方式去進行金融行為，使用了angular2來實作。</span>
+			<div class="col-md-12 col-sm-12 porfolioFigure ">
+				<div class="description">
+					<h1>Intellgent Target System</h1>
 				</div>
-
-				<figure class="col-md-8">
-					<a href="https://yueming-chen.github.io/fish/" target="_blank">
-					<img class="col-md-12" src="./SHOW6.png">
+				<figure>
+					<a href="https://recipevoicebe.herokuapp.com/login" target="_blank">
+					<img src="./SHOW5.png">
 				</a>
 				</figure>
-
-			</div>
-
-			<div class="col-md-12 porfolioFigure">
-				<figure class="col-md-8">
-					<a href="https://yueming-chen.github.io/fish/" target="_blank">
-					<img class="col-md-12" src="./SHOW7.png">
-				</a>
-				</figure>
-				<div class="col-md-4 description">
-					<h1>北科大管弦樂團譜務系統系統</h1>
-					<span>在樂團中，總是使用紙本的來傳遞，難免在環境的傷害下，有問題出現，此系統解決了這個問題，唯一的成本只需要將紙本譜影印城電子檔案，並且在每次團練中可以快速使用，此系統使用angular2撰寫。</span>
+				<div class="col-md-10 description col-md-offset-2">
+					<p class="intro">現今商品資訊在包裝卻不夠詳盡，我與團隊發想了一個把所有的資訊濃縮在二維條碼之中，把資訊與客服的服務都整合之中，包含的商品也不只是食品，也有3C產品，可以去追蹤自己的物品的狀況。</p>
+					<p class="use-lang">use React、NODE.JS and MYSQL</p>
 				</div>
 			</div>
 
-		</div>
-		<div class="col-md-12 porfolioFigure">
 
-			<div class="col-md-4 description">
-				<h1>let's travel 樂子旅遊官方網站</h1>
-				<span>藉由智能機器人，讓客戶能用更生活化的方式去進行金融行為，使用了angular2來實作。</span>
+			<div class="col-md-12 col-sm-12 porfolioFigure ">
+				<div class="description">
+					<h1>Issue tracking 日誌模式</h1>
+				</div>
+				<figure>
+					<a href="" target="_blank">
+					<img src="./SHOW4.png">
+				</a>
+				</figure>
+				<div class="col-md-10 description col-md-offset-2">
+					<p class="intro">在現今議題追蹤網頁上，其實都是死板板的訂下日期與里程碑（milestone），如果可以用比較輕鬆的口吻，但不失清楚的邏輯來編寫，應該能讓人有更好的追蹤習慣。</p>
+					<p class="use-lang">use angular1 NODE.JS and MongoSQL</p>
+				</div>
 			</div>
 
-			<figure class="col-md-8">
-				<a href="https://yueming-chen.github.io/fish/" target="_blank">
-					<img class="col-md-12" src="./SHOW8.png">
-				</a>
-			</figure>
 
+			<div class="col-md-12 col-sm-12 porfolioFigure ">
+				<div class="description">
+					<h1>北科大管弦樂團譜務系統</h1>
+				</div>
+				<figure>
+					<a href="https://recipevoicebe.herokuapp.com/login" target="_blank">
+					<img src="./SHOW7.png">
+				</a>
+				</figure>
+				<div class="col-md-10 description col-md-offset-2">
+					<p class="intro">在大部分的樂團總是使用著紙本的譜萊管理，但在更近一步，會有人掃成電子檔來保存，但其實應該有一個統一的管理窗口，直接可以管理並且，在寄送譜整合在一起的系統。</p>
+					<p class="intro">我們有了這個產品，能夠一一去做每個譜的建檔，不管是單純只輸入套譜的資訊，還是更進階可以在線上觀看譜，甚至是整合音樂會，直接在該檔期發送譜給團員做預習，都是很有幫助的。</p>
+					<p class="use-lang">use angular2、angular-cli with webpack and MYSQL</p>
+				</div>
+			</div>
+
+			<div class="col-md-12 col-sm-12 porfolioFigure ">
+				<div class="description">
+					<h1>let's travel 樂子旅遊</h1>
+				</div>
+				<figure>
+					<a href="https://recipevoicebe.herokuapp.com/login" target="_blank">
+					<img src="./SHOW8.png">
+				</a>
+				</figure>
+				<div class="col-md-10 description col-md-offset-2">
+					<p class="intro">旅遊已經是現代的顯學，比愛情更刻骨銘心的一段旅程最讓人希望，我們呈現最讓人印象深刻的網頁，讓人一進入到網頁就有最棒的感受。</p>
+					<p class="use-lang">use php,MYSQL</p>
+				</div>
+			</div>
+
+			<div class="col-md-12 col-sm-12 porfolioFigure final-port">
+				<div class="description">
+					<h1>德信投顧Line@</h1>
+				</div>
+				<figure>
+					<a href="https://recipevoicebe.herokuapp.com/login" target="_blank">
+					<img src="./SHOW10.png">
+				</a>
+				</figure>
+				<div class="col-md-10 description col-md-offset-2">
+					<p class="intro">在智能投資興起的時代，我們需要更電子化的方式來做投資，能夠及時解決投資客對於投資的問題，而營業員們，能夠藉由這個媒介，更精準的傳達投資的訊息給投資人，我們為了這個時代創作了一個全智能的平台，以line@這個提供機器人的功能，並且整合可以寄發卡片這個功能，讓整個line就可以下單，整個變成了聊天投資站，讓金融與生活做一個完整的鏈接。</p>
+					<p class="use-lang">use jquery、NODE.JS、angular4、pm2 and MongoSQL</p>
+				</div>
+			</div>
 		</div>
 	</section>
+
+
 	<!-- <footer>copyright Rach Chen.</footer> -->
 </body>
 
 </html>
 
-<script type="text/javascript">
+<!-- <script type="text/javascript">
 	$(document).ready(function () {
 		$('.ham').click(function () {
 			console.log('asd');
@@ -171,4 +288,4 @@
 		return false;
 	});
 
-</script>
+</script> -->
