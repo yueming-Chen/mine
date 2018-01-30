@@ -1,0 +1,82 @@
+.skill {
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.skill .title {
+  display: flex;
+  align-items: center;
+  padding-left: 3rem;
+  /* background: url('../skill.jpg'); */
+  font-size: 5em;
+  font-weight: normal;
+  margin: 0;
+}
+
+#skill .container {
+  width: 100vw;
+  padding: 80px 0;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  background-color: rgba(56, 56, 56, 0.89);
+  background-image: repeating-linear-gradient(to top right, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 20.6%, rgb(142, 142, 142) 78.8%, rgba(0, 0, 0, 0) 100%);
+  background-image: -ms-repeating-linear-gradient(bottom left, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 20.6%, rgb(142, 142, 142) 78.8%, rgba(0, 0, 0, 0) 100%);
+}
+
+#skill .container .node {
+  flex: 1;
+  padding: 1em;
+  margin: 0.7em;
+  color: white;
+  /* box-shadow: 5px 5px 12px #ccc; */
+  /* background: rgba(255, 255, 255, 0.8); */
+  /* border-radius: 5px; */
+}
+
+#skill .container .node .title {
+  font-size: 1.4em;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #eee;
+  margin-bottom: 10px;
+}
+
+#skill .container .node .context {
+  display: flex;
+  align-items: baseline;
+  font-size: 1.3em;
+  margin-left: 2em;
+  padding: 0.8em;
+}
+
+#skill .container .node .context .dash {
+  width: 1em;
+  height: 2px;
+  border-bottom: 4px solid #E2E935;
+  margin-right: 5px;
+}
+
+.porfolioFigure {
+  width: 50vw;
+  background-size: cover;
+}
+
+.porfolioFigure img {
+  /* height: 80%;
+  width: 80%; */
+}
+
+.porfolioFigure {
+  padding: 0;
+}
+
+.porfolioFigure img {
+  width: 50vw;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}

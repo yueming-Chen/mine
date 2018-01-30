@@ -1,0 +1,22 @@
+.abuot-content {
+  padding: 3rem 1rem;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.f1 {
+  flex: 1;
+}
+
+.f2 {
+  flex: 2;
+}
+
+.subtitle {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-desc .span {
+  padding-right: 5rem;
+}

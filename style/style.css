@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+}
+
+figure,
 html,
 body,
 div,
@@ -262,8 +267,8 @@ h1 {
 
 .content {
   font-family: Playfair Display, san serif;
-  margin-left: 100px;
-  margin-top: 100px;
+  /* margin-left: 100px;
+  margin-top: 100px; */
 }
 
 .content .about-title {
@@ -279,21 +284,13 @@ h1 {
 }
 
 .portfolio {
-  background: #9799A0;
-  text-align: center;
+  /* background: #9799A0; */
 }
 
 .portfolio .inside {
   background-color: white;
   margin-top: 100px;
   margin-bottom: 100px;
-}
-
-.about-desc {
-  margin-bottom: 100px;
-  padding-top: 80px;
-  padding-right: 350px;
-  font-family: Playfair Display, Microsoft JhengHei, san serif;
 }
 
 footer {
@@ -321,51 +318,6 @@ footer {
 a[ id="about"]:target~#about {
   -webkit-transform: translateY( 0px);
   transform: translateY( 0px);
-}
-
-.porfolioFigure {
-  margin-bottom: 37px;
-  border-bottom: 1px solid #dcdcd9
-}
-
-.porfolioFigure img {
-  height: 80%;
-  width: 80%;
-}
-
-.porfolioFigure .description {
-  padding-top: 60px;
-  padding-left: 20px;
-  text-align: left;
-  font-family: Playfair Display, Microsoft JhengHei, san serif;
-}
-
-.porfolioFigure .description h1 {
-  text-align: center;
-  margin-bottom: 20px;
-  color: #402039;
-}
-
-.porfolioFigure .description p {
-  font-size: 20px;
-  margin-bottom: 5px;
-}
-
-.porfolioFigure .description .intro {
-  font-style: italic;
-  border-left: 4px solid #A69F98;
-  padding-left: 10px;
-  padding-right: 100px;
-  line-height: 1.33 em;
-}
-
-.porfolioFigure .description .use-lang {
-  margin-bottom: 30px;
-}
-
-.porfolioFigure img {
-  box-shadow: 3px 3px 5px #776677;
-  padding: 0;
 }
 
 .final-port {
@@ -397,13 +349,6 @@ a[ id="about"]:target~#about {
   .col-md-8 {
     padding: 0;
   }
-  .porfolioFigure {
-    padding: 0;
-  }
-  .porfolioFigure img {
-    width: 370px;
-    height: 100%;
-  }
   h1 {
     font-size: 40px;
     margin-bottom: 10px;
@@ -416,65 +361,4 @@ a[ id="about"]:target~#about {
     margin-bottom: 0;
     padding-bottom: 30px;
   }
-}
-
-.skill {
-  background: url('../skill.jpg');
-  width: 100vw;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.skill .title {
-  display: flex;
-  align-items: center;
-  padding: 3em;
-  color: white;
-  font-size: 5em;
-  font-weight: normal;
-  margin: 0;
-}
-
-#skill .container {
-  width: 100vw;
-  padding: 80px 0;
-  display: flex;
-  flex-wrap: wrap;
-  box-sizing: border-box;
-  background-color: rgba(56, 56, 56, 0.89);
-  background-image: repeating-linear-gradient(to top right, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 20.6%, rgb(142, 142, 142) 78.8%, rgba(0, 0, 0, 0) 100%);
-  background-image: -ms-repeating-linear-gradient(bottom left, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 20.6%, rgb(142, 142, 142) 78.8%, rgba(0, 0, 0, 0) 100%);
-}
-
-#skill .container .node {
-  flex: 1;
-  padding: 1em;
-  margin: 0.7em;
-  color: white;
-  /* box-shadow: 5px 5px 12px #ccc; */
-  /* background: rgba(255, 255, 255, 0.8); */
-  /* border-radius: 5px; */
-}
-
-#skill .container .node .title {
-  font-size: 1.4em;
-  padding-bottom: 10px;
-  border-bottom: 3px solid #eee;
-  margin-bottom: 10px;
-}
-
-#skill .container .node .context {
-  display: flex;
-  align-items: baseline;
-  font-size: 1.3em;
-  margin-left: 2em;
-  padding: 0.8em;
-}
-
-#skill .container .node .context .dash {
-  width: 1em;
-  height: 2px;
-  border-bottom: 4px solid #E2E935;
-  margin-right: 5px;
 }
