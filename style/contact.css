@@ -1,3 +1,81 @@
+.contact {
+  background: #DB9D47;
+  position: relative;
+}
+
+.contact .title {
+  color: #FFFFC7;
+}
+
 .description {
-  padding: 2rem 5rem;
+  color: #FFFFC7;
+  padding: 1rem 3rem;
+  padding-top: 0px;
+}
+
+.info-title {
+  padding: 0rem 3rem;
+  color: #FFFFC7;
+  font-size: 1.4rem;
+  position: relative;
+}
+
+.conatact-info-decription {
+  display: flex;
+  padding: .8rem 3rem;
+}
+
+.contact-icon {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+}
+
+.contact-id {
+  color: #FFFFC7;
+  font-size: 1rem;
+  padding-top: .5rem;
+  font-family: Playfair Display, san serif;
+  /* color: black; */
+}
+
+.button-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info {
+  padding-top: 1rem;
+  padding-bottom: 5rem;
+}
+
+
+/* .info-title:after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 50px;
+  background: beige;
+} */
+
+.logdown {
+  display: inline-block;
+  vertical-align: 2px;
+  margin-right: 6px;
+}
+
+.logdown:after {
+  color: #DB9D47;
+  background: black;
+  content: 'L';
+  width: 28px;
+  text-align: center;
+  font: bold 25px/26px "Oleo Script Swash Caps", sans-serif;
+  /* border: 3px solid; */
+  display: inline-block;
+  padding-bottom: 2px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 50%;
 }

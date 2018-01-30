@@ -1,8 +1,6 @@
 .skill {
   width: 100vw;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  position: relative;
 }
 
 .skill .title {

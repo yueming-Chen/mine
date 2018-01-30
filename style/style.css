@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 figure,
 html,
 body,
@@ -170,6 +174,26 @@ h1 {
   margin-bottom: 50px;
 }
 
+.skill .title::after {
+  content: '';
+  position: absolute;
+  left: 105px;
+  right: 5rem;
+  height: 1px;
+  top: 7.5rem;
+  background: black;
+}
+
+.contact .title::after {
+  content: '';
+  position: absolute;
+  left: 105px;
+  right: 5rem;
+  height: 1px;
+  top: 7.5rem;
+  background: #FFFFC7;
+}
+
 .ham {
   width: 30px;
   height: 25px;
@@ -236,7 +260,7 @@ h1 {
 }
 
 .navbar {
-  background: url('../S__851976.jpg');
+  background: url('../assets/puhsup.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -291,12 +315,6 @@ h1 {
   background-color: white;
   margin-top: 100px;
   margin-bottom: 100px;
-}
-
-footer {
-  text-align: center;
-  margin-top: 30px;
-  margin-bottom: 10px;
 }
 
 .divider {
@@ -361,4 +379,24 @@ a[ id="about"]:target~#about {
     margin-bottom: 0;
     padding-bottom: 30px;
   }
+}
+
+.flex {
+  display: flex;
+}
+
+.f1 {
+  flex: 1;
+}
+
+.f2 {
+  flex: 2;
+}
+
+.footer {
+  background: rgba(28, 28, 28, 0.95);
+  padding: 1rem .5rem;
+  padding-left: 3rem;
+  color: #808285;
+  font-family: serif;
 }
