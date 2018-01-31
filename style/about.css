@@ -12,3 +12,15 @@
 .about-desc .span {
   padding-right: 5rem;
 }
+
+@media screen and (max-width: 700px) {
+  .abuot-content {
+    flex-direction: column;
+  }
+  .about-desc .span {
+    padding-right: 0px;
+    padding-top: 1rem;
+    line-height: 1.4rem;
+    text-align: justify;
+  }
+}

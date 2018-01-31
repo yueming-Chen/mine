@@ -199,6 +199,8 @@ h1 {
 }
 
 .ham {
+  display: none;
+  z-index: -100;
   width: 30px;
   height: 25px;
   margin: 12px 0 12px 20px;
@@ -218,7 +220,7 @@ h1 {
   position: absolute;
   height: 1px;
   width: 100%;
-  background: white;
+  background: black;
   opacity: 1;
   left: 0;
   -webkit-transform: rotate(0deg);
@@ -241,6 +243,10 @@ h1 {
 
 .ham span:nth-child(3) {
   top: 24px;
+}
+
+.ham.open span {
+  background: white;
 }
 
 .ham.open span:nth-child(1) {
@@ -346,24 +352,6 @@ a[ id="about"]:target~#about {
   border-bottom: 0;
 }
 
-@media screen and (max-width: 700px) {
-  .top-bar {
-    visibility: hidden;
-  }
-  .navbar {
-    height: 100vh;
-    background-position: center;
-  }
-  .navbar .c_button {
-    padding-right: 0px;
-    padding-left: 0px;
-    margin-top: 50%;
-  }
-  .navbar .c_button a {
-    font-size: 1.9rem;
-  }
-}
-
 .flex {
   display: flex;
 }
@@ -382,4 +370,101 @@ a[ id="about"]:target~#about {
   padding-left: 3rem;
   color: #808285;
   font-family: serif;
+}
+
+.bar-menu {
+  display: none;
+}
+
+.scroll-bar {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .top-bar {
+    visibility: hidden;
+  }
+  .navbar {
+    height: 100vh;
+    background-position: center;
+  }
+  .navbar .c_button {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-top: 42vh;
+  }
+  .navbar .c_button a {
+    font-size: 1.9rem;
+  }
+  .skill .title::after,
+  .contact .title::after {
+    right: 0;
+    left: 5.4rem;
+    height: 1px;
+    top: 2rem;
+  }
+  .footer {
+    letter-spacing: -1px;
+  }
+  .ham {
+    display: block;
+    position: fixed;
+    right: 1rem;
+    z-index: 101;
+  }
+  .bar-menu {
+    display: block;
+    left: 0;
+    z-index: 100;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .8);
+    transition: all ease-in .3s;
+  }
+  .bar-menu.hide {
+    left: 100vw;
+  }
+  .bar-menu .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    height: 100vh;
+  }
+  .bar-menu a {
+    font-family: Playfair Display, san serif;
+    font-size: 2rem;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .abuot-content {
+    flex-direction: column;
+  }
+  .about-desc .span {
+    padding-right: 0px;
+    padding-top: 1rem;
+    line-height: 1.4rem;
+    text-align: justify;
+  }
+  .scroll-bar {
+    display: block;
+    position: fixed;
+    background: white;
+    z-index: 99;
+    width: 100%;
+    transition: all ease-in-out .3s;
+    top: -10%;
+  }
+  .scroll-bar.show {
+    top: 0%;
+  }
+  .scroll-bar .scroll-content {
+    padding: 1rem 1rem;
+    display: flex;
+    flex-wrap: nowrap;
+    font-family: Playfair Display, san serif;
+  }
 }
