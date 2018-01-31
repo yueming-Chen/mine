@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 a {
   text-decoration: none;
 }
@@ -343,41 +347,20 @@ a[ id="about"]:target~#about {
 }
 
 @media screen and (max-width: 700px) {
+  .top-bar {
+    visibility: hidden;
+  }
   .navbar {
-    background-size: contain;
-    background-attachment: fixed;
+    height: 100vh;
+    background-position: center;
   }
-  .content {
-    background: white;
-    margin-left: 10px;
+  .navbar .c_button {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-top: 50%;
   }
-  .about-desc {
-    padding-right: 10px;
-    font-size: 20px;
-  }
-  .title {
-    padding-top: 20px;
-  }
-  .col-sm-12 {
-    padding: 0;
-  }
-  .col-md-12 {
-    padding: 0;
-  }
-  .col-md-8 {
-    padding: 0;
-  }
-  h1 {
-    font-size: 40px;
-    margin-bottom: 10px;
-  }
-  h3 {
-    font-size: 30px;
-    margin-bottom: 10px;
-  }
-  .bottom {
-    margin-bottom: 0;
-    padding-bottom: 30px;
+  .navbar .c_button a {
+    font-size: 1.9rem;
   }
 }
 
