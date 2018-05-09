@@ -2,10 +2,6 @@
   box-sizing: border-box;
 }
 
-body {
-  overflow-x: hidden;
-}
-
 a {
   text-decoration: none;
 }
@@ -84,6 +80,8 @@ td {
 
 body {
   line-height: 1;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 ol,
@@ -104,13 +102,11 @@ q:after {
   content: none;
 }
 
-
 /* remember to define focus styles! */
 
 :focus {
   outline: 0;
 }
-
 
 /* remember to highlight inserts somehow! */
 
@@ -121,7 +117,6 @@ ins {
 del {
   text-decoration: line-through;
 }
-
 
 /* tables still need 'cellspacing="0"' in the markup */
 
@@ -383,6 +378,7 @@ a[ id="about"]:target~#about {
 @media screen and (max-width: 700px) {
   .top-bar {
     visibility: hidden;
+    display: none;
   }
   .navbar {
     height: 100vh;
