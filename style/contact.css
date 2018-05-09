@@ -157,4 +157,17 @@
   .info {
     padding-bottom: 1rem;
   }
+  .container {
+    flex-direction: column;
+    padding: 0px;
+  }
+  .form {
+    position: initial;
+  }
+  .form .row {
+    padding: 1rem 1rem;
+  }
+  .form-container {
+    padding: 1rem;
+  }
 }
