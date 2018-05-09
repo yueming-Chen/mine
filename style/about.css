@@ -13,6 +13,102 @@
   padding-right: 5rem;
 }
 
+.exp-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1rem;
+}
+
+.terminal {
+  font-family: serif;
+  font-size: 1.2rem;
+  padding: 10px;
+  border-radius: 0 0 7px 7px;
+  position: relative;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.057), 0 0 30px 1px rgba(0, 0, 0, 0.2);
+  line-height: 1.2em;
+  width: 70vw;
+  min-height: 300px;
+  background-color: #000000;
+  color: #b4c4c6;
+}
+
+.terminal::before {
+  box-sizing: border-box;
+  border-radius: 7px 7px 0 0;
+  position: absolute;
+  overflow: hidden;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  color: #4c3436;
+  font-size: 1rem;
+  content: attr(title-word);
+  display: block;
+  width: 100%;
+  text-overflow: ellipsis;
+  padding: 0 80px;
+  white-space: nowrap;
+  background: linear-gradient(0deg, #d8d8d8, #ececec);
+  top: -25px;
+  left: 0;
+  font-family: serif;
+}
+
+.terminal::after {
+  content: "";
+  position: absolute;
+  top: -18px;
+  left: 10px;
+  width: 12px;
+  height: 12px;
+  background: #f95c5b;
+  border-radius: 100%;
+  box-shadow: 0 0 0 1px #da3d42, 22px 0 0 0 #fabe3b, 22px 0 0 1px #ecb03e, 44px 0 0 0 #38cd46, 44px 0 0 1px #2eae32;
+}
+
+.terminal p {
+  margin: 2px;
+}
+
+.terminal p::before {
+  color: #fff;
+  content: 'chenyuemingde-MacBook-Pro:/ ~$ ';
+}
+
+.terminal p a {
+  color: #b4c4c6;
+}
+
+.terminal p .ls-text {
+  color: #701ce6;
+}
+
+.terminal .final::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 1.2rem;
+  background: #666;
+  border: 1px solid #666;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  -webkit-animation-name: blink;
+  -webkit-animation-duration: 1s;
+  animation-name: blink;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes blink {
+  from {
+    background-color: #666;
+  }
+  to {
+    background-color: black;
+  }
+}
+
 @media screen and (max-width: 700px) {
   .abuot-content {
     flex-direction: column;
