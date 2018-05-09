@@ -11,6 +11,8 @@
 
 .about-desc .span {
   padding-right: 5rem;
+  text-align: justify;
+  line-height: 1.4rem;
 }
 
 .exp-content {
