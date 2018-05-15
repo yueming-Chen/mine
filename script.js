@@ -29,13 +29,17 @@ window.onload = () => {
       scrollbar.classList.remove('show');
     }
   });
-
-
   let userLang = navigator.language || navigator.userLanguage;
 
   let collect = document.getElementsByClassName('zh-TW' === userLang ? "en" : "zw");
   if (collect) Array.from(collect).map((el) => {
     el.setAttribute('style', 'display:none');
   });
-
 };
+
+let userLang = navigator.language || navigator.userLanguage;
+
+let collect = document.getElementsByClassName('zh-TW' === userLang ? "en" : "zw");
+if (collect) Array.from(collect).map((el) => {
+  el.setAttribute('style', 'display:none');
+});
