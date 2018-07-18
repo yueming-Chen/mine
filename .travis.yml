@@ -23,6 +23,6 @@ before_script:
 - npm install
 - npm install -g express 
 
-script: node bundle.js
+script: echo "success."
 
 only: gh-pages
