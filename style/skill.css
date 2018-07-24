@@ -58,21 +58,35 @@
 }
 
 .porfolioFigure {
+  position: relative;
   width: 50vw;
   height: 50vh;
   background-size: cover;
-  filter: brightness(70%);
   transition: all ease-in-out .3s;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
-.porfolioFigure:hover {
-  filter: brightness(100%);
+.porfolioFigure .photo {
+  width: 50vw;
+  height: 50vh;
+  position: absolute;
+  transition: all ease-in-out .2s;
+  background-position: center;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.porfolioFigure:hover .photo {
+  filter: brightness(70%) blur(5px);
+  transform: scale(1.1);
 }
 
 .air-title {
+  font-family: Playfair Display, san serif;
   transition: all ease-in-out .3s;
   visibility: hidden;
   opacity: 0;
@@ -80,16 +94,12 @@
   border: 2px solid white;
   font-size: 3rem;
   padding: 2rem 5rem;
+  z-index: 10;
 }
 
 .air-title a {
   text-decoration: none;
   color: inherit;
-}
-
-.dark-theme {
-  color: black;
-  border-color: black;
 }
 
 .porfolioFigure:hover .air-title {
