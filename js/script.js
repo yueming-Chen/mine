@@ -1,5 +1,7 @@
+
+
 window.onload = () => {
-  console.log(123);
+  lazy();
   let ham = document.getElementById('ham');
   let menu = document.getElementById('menu');
   let scrollbar = document.getElementById('scrollShowBar');
